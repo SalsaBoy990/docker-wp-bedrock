@@ -10,7 +10,7 @@ Services: PHP-FPM, Nginx, MariaDB, PhpMyAdmin.
 
 2. Create `wordpress` folder in root. Bedrock will be installed here.
 
-3. Run `bin/start` or `docker-compose up --build`. There are useful shell commands in `bin` folder.
+3. Run `docker-compose up --build`. There are useful shell commands in `bin` folder.
 
 4. Create a new Bedrock project
 
