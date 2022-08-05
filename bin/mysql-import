@@ -1,0 +1,5 @@
+#!/bin/bash
+set -a
+source .env
+
+docker-compose exec mysql bash -c "mysql -hmysql -uroot -p"${DB_PASSWORD}" "${DB_NAME}" < ./db/dump.sql"
