@@ -3,5 +3,5 @@ set -a
 source .env
 
 systemctl stop apache2 mysql
-docker-compose -f docker-compose.yml up "$@"
+docker-compose -f docker-compose-ssl.yml up "$@"
 
