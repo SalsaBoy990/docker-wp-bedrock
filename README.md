@@ -4,6 +4,10 @@ Services: PHP-FPM, Nginx, MariaDB, PhpMyAdmin.
 
 `wp-cli` and `xdebug` support.
 
+
+**For custom domain and ssl support, use `feature/ssl_custom_domain` branch. See the readme on that branch for user guide.**
+
+
 ## Setup
 
 1. Create `.env` file in root folder. See the example. Change the app name only!
