@@ -1,4 +1,4 @@
-FROM wordpress:php8.1-fpm
+FROM wordpress:php8.0-fpm
 
 # Install dependencies
 RUN apt-get update && apt-get install -y sudo less  \ 
