@@ -122,7 +122,8 @@ You may need to change permissions for wordpress folder. However, for production
 ### Docker notes
 
 For Linux, you may have to use sudo if your Docker is not configured to be used as a non-root user.
-There are useful bash scripts in bin folder (bin/start, bin/down, etc.) which are useful.
+
+There are useful bash scripts in bin folder (bin/start, bin/down, etc.)
 
 ## Change Language
 
