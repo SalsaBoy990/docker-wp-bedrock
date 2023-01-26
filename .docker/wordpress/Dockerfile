@@ -1,8 +1,8 @@
-FROM wordpress:php8.0-fpm
+FROM wordpress:php8.1-fpm
 
 # Install dependencies
-RUN apt-get update && apt-get install -y sudo less  \ 
-default-mysql-client nano vim iputils-ping libxml2-dev
+RUN apt-get update && apt-get install -y sudo \
+    less default-mysql-client nano iputils-ping libxml2-dev zip unzip
 
 # Cleanup
 RUN apt-get clean
