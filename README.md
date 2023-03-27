@@ -191,4 +191,35 @@ Then run `bin/setup-ssl`.
 
 Continue with step #4 at the **Setup section**.
 
+
+## Mailcatcher for local e-mail testing
+
+
+1. See the `mailcatcher` in the docker-compose files.
+
+2. Change `sendmail_path` in php.ini (php --ini). And reload php.ini by restarting services (`bin/restart`). Should be like this:
+
+`sendmail_path = /usr/local/bin/mhsendmail`
+
+[mhsendmail](https://github.com/mailhog/mhsendmail) - A sendmail replacement which forwards mail to an SMTP server.
+In our case to Mailcatcher's SMTP local server.
+
+3. Install `"wpackagist-plugin/wp-mail-smtp":"3.7.0"` with Composer inside the WordPress service.
+
+4. Configure SMTP:
+
+Setup "from address", and "name". Choose the "Other SMTP" option. 
+
+Set these:
+- SMTP Host: **mailcatcher**
+- SMTP Port: **1025**
+
+No need for encryption.
+Auto TLS -> Off.
+Authentication -> None.
+
+5. Send out a test email.
+
+6. Access Mailcatcher UI at localhost:1081
+
     
