@@ -23,7 +23,7 @@ ENV XDEBUG_IDEKEY docker
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 COPY xdebug.ini "$PHP_INI_DIR/conf.d/"
 
-RUN docker-php-ext-install xml fileinfo 
+RUN docker-php-ext-install xml fileinfo soap
 
 
 ENTRYPOINT []
