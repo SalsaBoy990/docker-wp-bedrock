@@ -2,9 +2,9 @@
 
 Images used for the services:
 
-- Wordpress: **wordpress:php8.0-fpm**
+- Wordpress: **wordpress:php8.1-fpm**
 - Nginx: **nginx:stable-alpine**
-- MariaDB: **mariadb:10.2**
+- MariaDB: **mariadb:10.6**
 - PhpMyAdmin: **phpmyadmin/phpmyadmin**
 
 `wp-cli` and `xdebug` support included.
