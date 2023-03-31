@@ -17,7 +17,7 @@ Images used for the services:
 
 2. Create `wordpress` folder in root. Bedrock will be installed here.
 
-3. Run `set- a; source .env; docker-compose up --build`.
+3. Run `set -a; source .env; docker-compose up --build`.
 
 4. Create a new Bedrock project:
 
